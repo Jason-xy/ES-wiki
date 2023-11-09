@@ -108,5 +108,6 @@ nav:
     - 硬件电路设计: hardwareDesign/board.md
   - 四旋翼飞行器调试: 
     - 调试注意事项: debugProblems/attention.md
+    - 安全守则: debugProblems/safety.md
 
 
