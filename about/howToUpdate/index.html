@@ -24,7 +24,7 @@
     
     
       
-        <title>如何修改本网站 - ES-Wiki</title>
+        <title>修改内容注意事项 - ES-Wiki</title>
       
     
     
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              如何修改本网站
+              修改内容注意事项
             
           </span>
         </div>
@@ -405,15 +405,86 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    修改内容注意事项
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    如何修改本网站
+    修改内容注意事项
   </span>
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    修改流程
+  </a>
+  
+    <nav class="md-nav" aria-label="修改流程">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    网站直接修改
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    本地修改页面
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    图片问题
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    内容问题
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -665,6 +736,55 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    修改流程
+  </a>
+  
+    <nav class="md-nav" aria-label="修改流程">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    网站直接修改
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    本地修改页面
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    图片问题
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    内容问题
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -686,8 +806,24 @@
   
 
 
-<h1 id="_1">如何修改本网站内容<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<p>留个坑，后面填</p>
+<h1 id="_1">修改内容注意事项<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h2 id="_2">修改流程<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h3 id="_3">网站直接修改<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<p><img alt="image-20231205203408011" src="https://tuchuang-e682.obs.cn-north-1.myhuaweicloud.com/image-20231205203408011.png" /></p>
+<p>在相应的页面点击右上角的编辑按钮进行编辑，页面会跳转到GitHub的相关页面：</p>
+<p><img alt="image-20231205203633917" src="https://tuchuang-e682.obs.cn-north-1.myhuaweicloud.com/image-20231205203633917.png" /></p>
+<p>修改页面之后填写修改信息，新建分支并且提出<code>pull request</code></p>
+<p><img alt="image-20231205204008080" src="https://tuchuang-e682.obs.cn-north-1.myhuaweicloud.com/image-20231205204008080.png" /></p>
+<h3 id="_4">本地修改页面<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<p>如果需要添加一级二级目录的话需要<code>git clone</code>到本地进行修改，首先需要根据<a href="https://eswiki.tech/">关于网站页面</a>进行fork项目并且在本地进行环境配置，然后把写好的<code>.md</code>文件添加到相应的目录中去，之后编辑项目主目录下的<code>mkdocs.yml</code>文件，文件主要修改下图所示的部分：</p>
+<p><img alt="image-20231205204641787" src="https://tuchuang-e682.obs.cn-north-1.myhuaweicloud.com/image-20231205204641787.png" /></p>
+<p>按照目录顺序仿照上图的方式修改yml文件即可。</p>
+<p>之后需要在本地运行然后调试无误后方可push到你fork的仓库内，然后提交pr即可</p>
+<h2 id="_5">图片问题<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<p>关于<code>ES-Wiki</code>中的图片，建议使用图床，在<code>.md</code>文件中应用相应的url进行使用，如果出现相对目录的文件，会增加后期维护的麻烦，并且pr <strong>不一定可以通过</strong></p>
+<h2 id="_6">内容问题<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<p>内容上请尽可能简练的描述遇到的问题和解决的办法，但是也鼓励将遇到的过程和解决的流程思路详细的描述出来，内容可以丰富多样，如果需要上传视频等大文件，请上传到bilibili或者其他视频平台然后引用url至此站。同时上传的内容可以在相应部分的结尾注明作者相关信息。</p>
+<p><strong>如果有其他问题，欢迎和本站负责人联系</strong></p>
 
 
 
