@@ -101,7 +101,7 @@ markdown_extensions:
 nav:
   - 简介: 
     - 网站简介: index.md
-    - 如何修改本网站: about/howToUpdate.md
+    - 修改内容注意事项: about/howToUpdate.md
   - 四旋翼飞行器软件设计:
     - 软件驱动设计: softwareDesign/drive.md
   - 四旋翼飞行器硬件设计:
